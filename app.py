@@ -213,4 +213,4 @@ if __name__ == "__main__":
                       queue=True)
         example_images.click(fn=set_example_image, inputs=[example_images], outputs=[img_input])
 
-    demo.launch(enable_queue=True，server_name='0.0.0.0', server_port=6006)
+    demo.launch(enable_queue=True,server_name='0.0.0.0', server_port=6006)
