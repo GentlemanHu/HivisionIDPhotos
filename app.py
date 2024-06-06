@@ -138,8 +138,8 @@ if __name__ == "__main__":
     colors = ["蓝色", "白色", "红色", "自定义底色"]
     render = ["纯色", "上下渐变(白)", "中心渐变(白)"]
 
-    title = "<h1 id='title'>HivisionIDPhotos</h1>"
-    description = "<h3>😎6.20更新：新增尺寸选择列表</h3>"
+    title = "<h1 id='title'>一键AI证件照</h1>"
+    description = "<h3>上传正脸照，自动生成各种尺寸证件照</h3>"
     css = '''
     h1#title, h3 {
       text-align: center;
@@ -213,4 +213,4 @@ if __name__ == "__main__":
                       queue=True)
         example_images.click(fn=set_example_image, inputs=[example_images], outputs=[img_input])
 
-    demo.launch(enable_queue=True)
+    demo.launch(enable_queue=True，server_name='0.0.0.0', server_port=6006)
